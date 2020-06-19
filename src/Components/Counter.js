@@ -11,8 +11,8 @@ const Counter = (props) => {
 
             <p aria-live="polite">Current count: <strong>{store.counter}</strong></p>
 
-            <button className="btn btn-primary" onClick={() => store.increment}>Increment</button>
-            <button className="btn btn-primary" onClick={() => store.decrement}>Decrement</button>
+            <button className="btn btn-primary" onClick={() => {store.increment()}}>Increment</button>
+            <button className="btn btn-primary" onClick={() => {store.decrement()}}>Decrement</button>
 
         </div>
     );

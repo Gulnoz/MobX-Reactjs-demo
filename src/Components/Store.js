@@ -1,13 +1,10 @@
 
-import { observable, action, configure, autorun } from "mobx"
-configure({
-    enforceActions: true,
-})
+import { observable, action, autorun } from "mobx"
 class Store {
     @observable counter = 0;
     constructor() {
         autorun(() => {
-            console.log(`Counter: ${this.state.counter}`)
+           console.log(`Counter: ${this.counter}`)
         })
     }
     increment = action(() => {
